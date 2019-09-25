@@ -20,7 +20,10 @@ public class Main
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie baahubali = context.getBean("movie", Movie.class);
-        baahubali.starring();
+        Movie baahubali1 = context.getBean("baahu1", Movie.class);
+        baahubali1.starring();
+        Movie baahubali2 = context.getBean("baahu2", Movie.class);
+        baahubali2.starring();
+        System.out.println(baahubali1==baahubali2);
     }
 }
