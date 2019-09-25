@@ -24,8 +24,7 @@ public class AppConfig {
 
     @Bean(name = {"baahu1", "baahu2"})
     public Movie movie(){
-        Movie movie = new Movie();
-        movie.setActor(actor3());
+        Movie movie = new Movie(actor3());
         return movie;
     }
 }
